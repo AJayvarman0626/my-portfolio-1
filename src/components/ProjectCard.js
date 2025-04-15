@@ -5,9 +5,9 @@ export const ProjectCard = ({ title, description, imgUrl, link }) => {
     <Col size={12} sm={6} md={4}>
       <a
         href={link}
-        target="_blank"
+        target={link === "#" ? "_self" : "_blank"}
         rel="noopener noreferrer"
-        style={{ textDecoration: 'none' }}
+        style={{ textDecoration: 'none', pointerEvents: link === "#" ? "none" : "auto" }}
       >
         <div className="proj-imgbx">
           <img src={imgUrl} alt={title} />
