@@ -8,7 +8,7 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
-  const projects = [
+  const fullStackProjects = [
     {
       title: "Jokaela E-commerce",
       description: "React & Tailwind CSS",
@@ -16,12 +16,53 @@ export const Projects = () => {
       link: "https://github.com/AJayvarman0626/ecom-Jokaela"
     },
     {
-      title: "Portfolio Website",
+      title: "We-Chat 2.0",
       description: "React & Daisy UI",
       imgUrl: projImg2,
       link: "https://github.com/AJayvarman0626/We-Chat-2.0"
     },
-   
+  ];
+
+  const frontendProjects = [
+    {
+      title: "Coming Soon",
+      description: "Frontend Project",
+      imgUrl: projImg3,
+      link: ""
+    },
+    {
+      title: "Coming Soon",
+      description: "Frontend Project",
+      imgUrl: projImg3,
+      link: ""
+    },
+    {
+      title: "Coming Soon",
+      description: "Frontend Project",
+      imgUrl: projImg3,
+      link: ""
+    },
+  ];
+
+  const backendProjects = [
+    {
+      title: "Coming Soon",
+      description: "Backend Project",
+      imgUrl: projImg3,
+      link: ""
+    },
+    {
+      title: "Coming Soon",
+      description: "Backend Project",
+      imgUrl: projImg3,
+      link: ""
+    },
+    {
+      title: "Coming Soon",
+      description: "Backend Project",
+      imgUrl: projImg3,
+      link: ""
+    },
   ];
 
   return (
@@ -49,16 +90,26 @@ export const Projects = () => {
                     <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                       <Tab.Pane eventKey="first">
                         <Row>
-                          {projects.map((project, index) => (
+                          {fullStackProjects.map((project, index) => (
                             <ProjectCard key={index} {...project} />
                           ))}
                         </Row>
                       </Tab.Pane>
+
                       <Tab.Pane eventKey="second">
-                        <p>🚧 These projects are under construction and will be available soon.</p>
+                        <Row>
+                          {frontendProjects.map((project, index) => (
+                            <ProjectCard key={index} {...project} />
+                          ))}
+                        </Row>
                       </Tab.Pane>
+
                       <Tab.Pane eventKey="third">
-                        <p>👷 Currently working on exciting new features. Stay tuned!</p>
+                        <Row>
+                          {backendProjects.map((project, index) => (
+                            <ProjectCard key={index} {...project} />
+                          ))}
+                        </Row>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
