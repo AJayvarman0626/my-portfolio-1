@@ -25,7 +25,7 @@ export const Projects = () => {
     {
       title: "School Information System",
       description: "React & Daisy UI",
-      imgUrl: projImg,
+      imgUrl: projImg4,
       link: "https://github.com/AJayvarman0626/We-Chat-2.0"
     },
   ];
