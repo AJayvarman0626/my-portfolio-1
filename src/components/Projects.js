@@ -18,13 +18,13 @@ export const Projects = () => {
     },
     {
       title: "We-Chat 2.0",
-      description: " React.js, Material UI, Redux & Node.js, Express.js",
+      description: "React & Daisy UI",
       imgUrl: projImg2,
       link: "https://github.com/AJayvarman0626/schooldbsysyem-clg-pj"
     },
     {
       title: "School Information System",
-      description: "React & Daisy UI",
+      description: "React.js, Material UI, Redux & Node.js, Express.js",
       imgUrl: projImg4,
       link: "https://github.com/AJayvarman0626/We-Chat-2.0"
     },
